@@ -1,0 +1,23 @@
+@import './reset.css';
+
+@font-face {
+  font-family: 'Helvetica', sans-serif;
+  src: url(./fonts/helvetica.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Helvetica-Bold', sans-serif;
+  src: url(./fonts/Helvetica-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #5c5c5e;
+}
