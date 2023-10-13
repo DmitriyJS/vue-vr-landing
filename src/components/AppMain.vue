@@ -3,10 +3,12 @@
     <app-section-top></app-section-top>
     <app-section-features></app-section-features>
     <app-section-games></app-section-games>
+    <app-section-buy></app-section-buy>
   </main>
 </template>
 
 <script>
+import AppSectionBuy from './sections/AppSectionBuy.vue'
 import AppSectionFeatures from './sections/AppSectionFeatures/AppSectionFeatures.vue'
 import AppSectionGames from './sections/AppSectionGames.vue'
 import AppSectionTop from './sections/AppSectionTop.vue'
@@ -14,13 +16,9 @@ export default {
   components: {
     AppSectionTop,
     AppSectionFeatures,
-    AppSectionGames
+    AppSectionGames,
+    AppSectionBuy
   },
-  data() {
-    return {
-      r: this.$store.state.test
-    }
-  }
 }
 </script>
 
@@ -48,10 +46,5 @@ export default {
 .top__text {
   font-size: 13px;
   margin-bottom: 50px;
-}
-
-.buy__text {
-  padding-top: 6px;
-  font-size: 13px;
 }
 </style>

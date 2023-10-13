@@ -18,6 +18,7 @@ export default {
   background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   display: flex;
   padding: 2px;
+  font-weight: 700;
 }
 
 .buy-btn__text {
