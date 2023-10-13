@@ -108,6 +108,16 @@ a{
   text-decoration: none;
 }
 
+button {
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
 li{
   list-style: none;
 }

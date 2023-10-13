@@ -12,7 +12,5 @@ export default {
     AppMain
   }
 }
-
-
 </script>
 <style scoped></style>

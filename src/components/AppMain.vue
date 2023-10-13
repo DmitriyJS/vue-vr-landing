@@ -1,27 +1,24 @@
 <template>
   <main class="main">
-    <section class="top">
-      <app-container>
-        <h1 class="title">Meta Quest 2</h1>
-        <p class="subtitle">Get an Elite Strap free</p>
-        <p class="top__text">For a limited time only, save $59.99 USD. Offer ends 1/19/23</p>
-        <app-button :text="btnTxt" :price="btnPrice" />
-        <p class="buy__text">Meta Quest 2 is for ages 13+</p>
-      </app-container>
-    </section>
+    <app-section-top></app-section-top>
+    <app-section-features></app-section-features>
+    <app-section-games></app-section-games>
   </main>
 </template>
 
 <script>
-import AppButton from './common/AppButton.vue'
+import AppSectionFeatures from './sections/AppSectionFeatures/AppSectionFeatures.vue'
+import AppSectionGames from './sections/AppSectionGames.vue'
+import AppSectionTop from './sections/AppSectionTop.vue'
 export default {
   components: {
-    AppButton
+    AppSectionTop,
+    AppSectionFeatures,
+    AppSectionGames
   },
   data() {
     return {
-      btnTxt: 'BUY NOW',
-      btnPrice: '399,99 USD'
+      r: this.$store.state.test
     }
   }
 }
@@ -54,7 +51,7 @@ export default {
 }
 
 .buy__text {
-    padding-top: 6px;
-    font-size: 13px;
+  padding-top: 6px;
+  font-size: 13px;
 }
 </style>

@@ -3,8 +3,8 @@
     <app-container class="container">
       <app-nav class="nav">
         <app-menu :menuItems="menuItems" />
-        <app-logo />
-        <app-basket :quantity="basketQuantity" />
+        <app-logo class="logo" />
+        <app-basket :quantity="basketQuantity" class="basket" />
       </app-nav>
     </app-container>
   </header>
@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       menuItems: ['SHOP', 'GAMES', 'METAVERSE'],
-      basketQuantity: 0
+      basketQuantity: 1
     }
   }
 }
@@ -30,5 +30,13 @@ export default {
 .header {
   border-bottom: 1px solid #cacad6;
   background: #f6f4f5;
+}
+
+.basket {
+  justify-self: end;
+}
+
+.logo {
+  justify-self: center;
 }
 </style>
