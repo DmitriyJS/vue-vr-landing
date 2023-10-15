@@ -1,46 +1,45 @@
 <template>
-  <header class="header">
+  <footer class="footer">
     <app-container class="container">
       <app-nav class="nav">
         <app-menu :menuItems="menuItems" />
         <app-logo class="logo" />
-        <app-basket :quantity="basketQuantity" class="basket" />
+        <img src="./assets/social.png" alt="" class="social" />
       </app-nav>
     </app-container>
-  </header>
+  </footer>
 </template>
 <script>
-import AppBasket from './common/AppBasket.vue'
 import AppLogo from './common/AppLogo.vue'
 import AppMenu from './common/AppMenu.vue'
 import AppNav from './common/AppNav.vue'
 
 export default {
-  components: { AppLogo, AppMenu, AppBasket, AppNav },
+  components: { AppLogo, AppMenu, AppNav },
   data() {
     return {
-      menuItems: ['SHOP', 'GAMES', 'METAVERSE'],
-      basketQuantity: 1
+      menuItems: ['SHOP', 'GAMES', 'METAVERSE', 'CONTACT US']
     }
   }
 }
 </script>
 
 <style scoped>
-.header {
-  border-bottom: 1px solid #cacad6;
-  background: #f6f4f5;
+.footer {
+  border: 1px solid #cacad6;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
-}
-
-.basket {
-  justify-self: end;
+  margin-bottom: 40px;
 }
 
 .logo {
   justify-self: center;
+}
+
+.social {
+  justify-self: end;
+  cursor: pointer;
 }
 </style>

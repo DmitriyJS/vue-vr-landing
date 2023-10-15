@@ -11,7 +11,12 @@
           </p>
           <a href="#" class="game__link">SEE ALL GAMES</a>
         </div>
-        <app-card :content="$store.state.gamesItemsContent" ></app-card>
+        <app-card
+          v-for="(item, i) in $store.state.gamesItemsContent"
+          class="card__item"
+          :key="i"
+          :content="item"
+        ></app-card>
       </div>
     </app-container>
   </section>
@@ -20,13 +25,13 @@
 <script>
 import AppCard from '../common/AppCard.vue'
 export default {
-  components: {AppCard},
+  components: { AppCard }
 }
 </script>
 
 <style scoped>
-.game {
-  margin-bottom: 20px;
+.games {
+  margin-bottom: 120px;
 }
 
 .game__title {

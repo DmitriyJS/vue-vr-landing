@@ -4,47 +4,32 @@
     <app-section-features></app-section-features>
     <app-section-games></app-section-games>
     <app-section-buy></app-section-buy>
+    <app-section-equipment></app-section-equipment>
+    <app-section-promo></app-section-promo>
+    <app-section-accessories></app-section-accessories>
+    <app-section-contacts></app-section-contacts>
   </main>
 </template>
 
 <script>
+import AppSectionAccessories from './sections/AppSectionAccessories.vue'
 import AppSectionBuy from './sections/AppSectionBuy.vue'
+import AppSectionContacts from './sections/AppSectionContacts.vue'
+import AppSectionEquipment from './sections/AppSectionEquipment.vue'
 import AppSectionFeatures from './sections/AppSectionFeatures/AppSectionFeatures.vue'
 import AppSectionGames from './sections/AppSectionGames.vue'
+import AppSectionPromo from './sections/AppSectionPromo.vue'
 import AppSectionTop from './sections/AppSectionTop.vue'
 export default {
   components: {
     AppSectionTop,
     AppSectionFeatures,
     AppSectionGames,
-    AppSectionBuy
-  },
+    AppSectionBuy,
+    AppSectionEquipment,
+    AppSectionPromo,
+    AppSectionAccessories,
+    AppSectionContacts
+  }
 }
 </script>
-
-<style scoped>
-.top {
-  min-height: calc(100vh - 81px);
-  background-image: url(./assets/top-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-}
-
-.title {
-  padding-top: 15%;
-  font-size: 96px;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-family: Helvetica;
-  font-size: 36px;
-  margin-bottom: 5px;
-}
-
-.top__text {
-  font-size: 13px;
-  margin-bottom: 50px;
-}
-</style>

@@ -25,8 +25,7 @@ export default {
 
 <style scoped>
 .buy {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
   text-align-last: center;
   position: relative;
   overflow-x: hidden;

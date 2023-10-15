@@ -39,7 +39,7 @@ export default createStore({
     gamesItemsContent: [
       {
         img: './src/components/assets/game-1.jpg',
-        title: 'Blade & Sorcery: Nomad',
+        title: 'Blade Sorcery:Nomad',
         text: 'Step into a medieval fantasy sandbox that uses phisics to serve up some of the most realistic combat in VR',
         link: '#'
       },
@@ -76,11 +76,29 @@ export default createStore({
         price: '$69.99 USD'
       },
       {
-        img: './src/components/assets/game-3.jpg',
+        img: './src/components/assets/accessary-4.jpg',
         title: 'Meta Quest Gift Cards',
         text: 'Redeemable on 350+ games and apps.',
         price: '$15-50 USD'
       }
+    ],
+    equipmentItemsContent: [
+      {
+        img: './src/components/assets/eq-1.jpg',
+        title: 'VR Headset',
+      },
+      {
+        img: './src/components/assets/eq-2.jpg',
+        title: 'Two Touch Controllers & AA Batteries',
+      },
+      {
+        img: './src/components/assets/eq-3.jpg',
+        title: 'Charging Cable & Power Adapter',
+      },
+      {
+        img: './src/components/assets/eq-4.jpg',
+        title: 'Glasses Spacer',
+      },
     ]
   },
   getters: {},

@@ -1,6 +1,6 @@
 <template>
   <ul class="menu">
-    <li v-for="menuItem in menuItems" :key="menuItem" class="menu__list">
+    <li v-for="menuItem in menuItems" :key="menuItem" class="menu__item">
       <a href="#" class="menu__link">{{ menuItem }}</a>
     </li>
   </ul>
@@ -21,5 +21,10 @@ export default {
 .menu {
   display: flex;
   gap: 0 20px;
+}
+
+.menu__item:hover {
+  color: black;
+  font-weight: 700;
 }
 </style>

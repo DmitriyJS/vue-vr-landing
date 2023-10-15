@@ -1,12 +1,12 @@
 <template>
-  <div v-for="(item, i) in content" class="card__item" :key="i">
-    <img class="card__item-img" :src="item.img" alt="" />
-    <h3 class="card__item-title">{{ item.title }}</h3>
-    <p class="card__item-text">{{ item.text }}</p>
-    <a class="card__item-link" v-if="!withPrice" :href="item.link">see more</a>
+  <div>
+    <img class="card__item-img" :src="content.img" alt="" />
+    <h3 class="card__item-title" :class="{'title__min-height': withtitleMinHeight}" >{{ content.title }}</h3>
+    <p class="card__item-text">{{ content.text }}</p>
+    <a class="card__item-link" v-if="!withPrice" :href="content.link">see more</a>
     <div class="price__block" v-else>
-      <div class="card__item-price">{{ item.price }}</div>
-      <button class="card__item-btn" >BUY NOW</button>
+      <div class="card__item-price">{{ content.price }}</div>
+      <button class="card__item-btn">BUY NOW</button>
     </div>
   </div>
 </template>
@@ -15,6 +15,10 @@
 export default {
   props: {
     withPrice: {
+      type: Boolean,
+      default: false
+    },
+    withtitleMinHeight: {
       type: Boolean,
       default: false
     },
@@ -28,10 +32,11 @@ export default {
 
 <style scoped>
 .card__item {
-  border: 1px solid #bc10d8;
+  border: 1px solid;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
 }
 
 .card__item-img {
@@ -39,8 +44,13 @@ export default {
 }
 
 .card__item-title {
-  font-size: 21px;
+  font-size: 23px;
   margin-bottom: 10px;
+  /* min-height: 67px; */
+}
+
+.title__min-height {
+  min-height: 67px;
 }
 
 .card__item-text {
