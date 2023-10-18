@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     setActiveItem(ind) {
-      this.activeItem = ind;
+      this.activeItem = ind
     }
   }
 }
@@ -76,5 +76,48 @@ export default {
   object-fit: cover;
   width: 100%;
   max-height: unset;
+}
+
+@media (max-width: 1100px) {
+  .equipment__box {
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: 1fr 210px 210px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 860px) {
+  .equipment__box {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .equipment__box-item__no-img {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  .equipment__box-item-active {
+    grid-row: 1/3;
+    grid-column: 1/4;
+  }
+}
+
+@media (max-width: 640px) {
+  .equipment__box {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .equipment__box-item__no-img {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+
+  .equipment__box-item-active {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
 }
 </style>

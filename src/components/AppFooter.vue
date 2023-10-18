@@ -2,7 +2,7 @@
   <footer class="footer">
     <app-container class="container">
       <app-nav class="nav">
-        <app-menu :menuItems="menuItems" />
+        <app-menu class="app-menu" :menuItems="menuItems" />
         <app-logo class="logo" />
         <img src="./assets/social.png" alt="" class="social" />
       </app-nav>
@@ -41,5 +41,29 @@ export default {
 .social {
   justify-self: end;
   cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  .nav .app-menu {
+    display: none !important;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav .app-menu {
+    display: none !important;
+  }
+
+  .nav {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
+    padding: 10px;
+  }
 }
 </style>

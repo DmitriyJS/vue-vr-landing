@@ -30,4 +30,11 @@ export default {
   background-color: #f6f4f5;
   padding: 19px 105px;
 }
+
+@media (max-width: 568px) {
+  .buy-btn {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 </style>

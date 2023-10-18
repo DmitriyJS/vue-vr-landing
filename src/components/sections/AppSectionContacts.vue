@@ -70,4 +70,11 @@ export default {}
   align-self: end;
   justify-self: end;
 }
+
+@media (max-width: 720px) {
+  .contacts__inner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
 </style>

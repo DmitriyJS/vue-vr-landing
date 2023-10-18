@@ -6,7 +6,7 @@
         <p class="features__text gradient-big-subtitle">Easy to set up and safe to use</p>
       </div>
       <div class="tabs">
-        <features-tabs-btn @changeTab="setActiveTab"  ></features-tabs-btn>
+        <features-tabs-btn @changeTab="setActiveTab"></features-tabs-btn>
         <features-tabs-content :tabNum="activeTab"></features-tabs-content>
       </div>
     </app-container>
@@ -19,7 +19,7 @@ import FeaturesTabsContent from './FeaturesTabsContent.vue'
 export default {
   components: {
     FeaturesTabsBtn,
-    FeaturesTabsContent,
+    FeaturesTabsContent
   },
   data() {
     return {
@@ -54,5 +54,23 @@ export default {
 .tabs {
   display: grid;
   grid-template-columns: 300px auto;
+}
+
+@media (max-width: 992px) {
+  .tabs {
+    display: block;
+  }
+}
+
+@media (max-width: 568px) {
+  .features__titles {
+    display: block;
+  }
+}
+
+@media (max-width: 420px) {
+  .features__text {
+    font-size: 30px;
+  }
 }
 </style>

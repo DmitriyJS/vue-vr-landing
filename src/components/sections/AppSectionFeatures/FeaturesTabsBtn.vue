@@ -16,13 +16,13 @@
 export default {
   data() {
     return {
-      activeBtn: 0,
+      activeBtn: 0
     }
   },
   methods: {
     setActiveTab(num) {
-      this.activeBtn = num;
-      this.$emit('changeTab', num);
+      this.activeBtn = num
+      this.$emit('changeTab', num)
     }
   }
 }
@@ -42,5 +42,23 @@ export default {
 
 .tabs__btn-item--active {
   color: #070707;
+}
+
+@media (max-width: 992px) {
+  .tabs__btn {
+    display: block;
+    column-count: 2;
+  }
+
+  .tabs__btn-item {
+    display: block;
+  }
+}
+
+@media (max-width: 420px) {
+  .tabs__btn {
+    display: block;
+    column-count: 1;
+  }
 }
 </style>

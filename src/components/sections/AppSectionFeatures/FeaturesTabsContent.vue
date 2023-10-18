@@ -28,9 +28,9 @@ export default {
   props: {
     tabNum: {
       type: Number,
-      required: true,
+      required: true
     }
-  },
+  }
 }
 </script>
 
@@ -56,6 +56,7 @@ export default {
 .tabs__content-img {
   grid-row: 1/-1;
   align-self: stretch;
+  object-fit: cover;
 }
 
 .tabs__content-box h3 {
@@ -86,5 +87,23 @@ export default {
 .video span {
   font-size: 13px;
   color: #f6f4f5;
+}
+
+@media (max-width: 568px) {
+  .tabs__content-item {
+    display: block;
+    height: 0;
+    position: relative;
+  }
+
+  .tabs__content-item--active {
+    height: auto;
+  }
+
+  .video {
+    width: auto;
+    height: 250px;
+    margin-top: 20px;
+  }
 }
 </style>

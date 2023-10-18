@@ -2,7 +2,7 @@
   <header class="header">
     <app-container class="container">
       <app-nav class="nav">
-        <app-menu :menuItems="menuItems" />
+        <app-menu class="app__menu" :menuItems="menuItems" />
         <app-logo class="logo" />
         <app-basket :quantity="basketQuantity" class="basket" />
       </app-nav>

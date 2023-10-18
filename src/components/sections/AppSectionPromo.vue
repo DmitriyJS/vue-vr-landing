@@ -20,6 +20,7 @@ export default {}
 .promo__inner {
   margin-bottom: 100px;
   background: url(../assets/promo.jpg);
+  background-position: top;
   height: 500px;
   background-repeat: no-repeat;
   margin: 0 auto;

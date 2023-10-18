@@ -15,4 +15,10 @@ export default {}
   align-items: center;
   height: 80px;
 }
+
+@media (max-width: 700px) {
+  .nav {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
 </style>

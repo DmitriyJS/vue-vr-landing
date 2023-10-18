@@ -4,7 +4,7 @@
       <h1 class="title">Meta Quest 2</h1>
       <p class="subtitle">Get an Elite Strap free</p>
       <p class="top__text">For a limited time only, save $59.99 USD. Offer ends 1/19/23</p>
-      <app-button :text="btnTxt" :price="btnPrice" />
+      <app-button  :text="btnTxt" :price="btnPrice" />
       <p class="buy__text">Meta Quest 2 is for ages 13+</p>
     </app-container>
   </section>
@@ -56,4 +56,38 @@ export default {
   padding-top: 6px;
   font-size: 13px;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 66px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 568px) {
+
+  .top {
+    text-align: center;
+  }
+
+  .buy__btn {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 433px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
+
 </style>

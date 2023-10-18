@@ -29,6 +29,7 @@ export default {
   text-align-last: center;
   position: relative;
   overflow-x: hidden;
+  padding: 0 5px;
 }
 
 .buy__img {

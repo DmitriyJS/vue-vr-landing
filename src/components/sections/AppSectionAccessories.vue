@@ -41,4 +41,18 @@ export default {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
+@media (max-width: 940px) {
+  .accessories__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  .accessories__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+}
 </style>

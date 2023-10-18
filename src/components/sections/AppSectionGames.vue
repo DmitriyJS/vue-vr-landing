@@ -67,4 +67,18 @@ export default {
   width: 225px;
   text-align: center;
 }
+
+@media (max-width: 992px) {
+  .game__inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 568px) {
+  .game__inner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
 </style>
