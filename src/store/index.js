@@ -38,19 +38,19 @@ export default createStore({
     ],
     gamesItemsContent: [
       {
-        img: '/vue-vr-landing/game-1.jpg',
+        img: 'game-1.jpg',
         title: 'Blade Sorcery:Nomad',
         text: 'Step into a medieval fantasy sandbox that uses phisics to serve up some of the most realistic combat in VR',
         link: '#'
       },
       {
-        img: '/vue-vr-landing/game-2.jpg',
+        img: 'game-2.jpg',
         title: 'Population: One',
         text: 'Climb anything. Fight everywhere. Experience battle royale only possible in VR',
         link: '#'
       },
       {
-        img: '/vue-vr-landing/game-3.jpg',
+        img: 'game-3.jpg',
         title: 'Supernatural',
         text: 'Box, Flow, Meditate and Stretch with real coaches in stunning destinations from around the world. Enjoy new workouts every day.',
         link: '#'
@@ -58,25 +58,25 @@ export default createStore({
     ],
     acessoriesItemsContent: [
       {
-        img: '/vue-vr-landing/accessary-1.jpg',
+        img: '/accessary-1.jpg',
         title: 'Meta Quest 2 Carrying Case',
         text: 'Protect your system–at home or away.',
         price: '$59.99 USD'
       },
       {
-        img: '/vue-vr-landing/accessary-2.jpg',
+        img: 'accessary-2.jpg',
         title: 'Link Cable',
         text: 'Harness the power of your PC with this premium fiber-optic cable.',
         price: '$79.99 USD'
       },
       {
-        img: '/vue-vr-landing/accessary-3.jpg',
+        img: 'accessary-3.jpg',
         title: 'Meta Quest 2 Active Pack',
         text: 'A wipeable facial interface, wrist straps, and knuckle straps.',
         price: '$69.99 USD'
       },
       {
-        img: '/vue-vr-landing/accessary-4.jpg',
+        img: 'accessary-4.jpg',
         title: 'Meta Quest Gift Cards',
         text: 'Redeemable on 350+ games and apps.',
         price: '$15-50 USD'
@@ -84,19 +84,19 @@ export default createStore({
     ],
     equipmentItemsContent: [
       {
-        img: '/vue-vr-landing/eq-1.jpg',
+        img: 'eq-1.jpg',
         title: 'VR Headset',
       },
       {
-        img: '/vue-vr-landing/eq-2.jpg',
+        img: 'eq-2.jpg',
         title: 'Two Touch Controllers & AA Batteries',
       },
       {
-        img: '/vue-vr-landing/eq-3.jpg',
+        img: 'eq-3.jpg',
         title: 'Charging Cable & Power Adapter',
       },
       {
-        img: '/vue-vr-landing/eq-4.jpg',
+        img: 'eq-4.jpg',
         title: 'Glasses Spacer',
       },
     ]
